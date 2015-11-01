@@ -1,3 +1,5 @@
 from nand import nand
+from aand import aand
+from oor import oor
 def xor(a, b):
-    return nand(nand(a,nand(a,b)),nand(nand(a,b,),b))
+    return aand(nand(a,b),oor(a,b))
