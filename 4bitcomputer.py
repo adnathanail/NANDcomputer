@@ -11,8 +11,9 @@ def fourbitcomputer(a,b):
     f.append(fulladder(a[-4],b[-4],f[2]['c']))
     return [f[3]['c'],f[3]['o'],f[2]['o'],f[1]['o'],f[0]['o']]
 out = ""
-for i in fourbitcomputer('1010','1111'):
+for i in fourbitcomputer(input('Enter a 4-bit binary number: '), input('Enter another: ')):
     if i:
         out += '1'
     else:
         out += '0'
+print(out)
